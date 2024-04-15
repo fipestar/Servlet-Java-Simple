@@ -1,0 +1,6 @@
+logica\Donaciones.class
+logica\Voluntariado.class
+com\proyecto1\primerservlet\resources\JakartaEE10Resource.class
+com\proyecto1\primerservlet\JakartaRestConfiguration.class
+com\proyecto1\primerservlet\Servlets\SvVoluntariado.class
+com\proyecto1\primerservlet\Servlets\SvDonaciones.class

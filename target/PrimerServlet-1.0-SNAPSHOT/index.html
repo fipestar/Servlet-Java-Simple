@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ONG Benéfica - Donaciones y Voluntariado</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+  
+    <body>
+        <header>
+        <h1>ONG Benéfica</h1>
+        <nav>
+            <ul>
+                <li><a href="#donaciones">Donaciones</a></li>
+                <li><a href="#voluntariado">Voluntariado</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+        <section id="donaciones">
+        <h2>Donaciones</h2>
+        <form action="SvDonaciones" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="identificacion">Identificación o NIT:</label>
+            <input type="text" id="identificacion" name="identificacion" required><br>
+
+            <label for="monto">Monto de Aporte:</label>
+            <input type="number" id="monto" name="monto" min="1" required><br>
+
+            <button type="submit">Enviar Donación</button>
+        </form>
+
+        <!-- Aquí se mostrará el detalle completo de las donaciones -->
+        <div id="detalle-donaciones">
+            <!-- Aquí se insertará dinámicamente el detalle de las donaciones -->
+        </div>
+    </section
+    
+    <section id="voluntariado">
+        <h2>Voluntariado</h2>
+        <form action="SvVoluntariado" method="POST">
+            <label for="nombre_voluntario">Nombre:</label>
+            <input type="text" id="nombre_voluntario" name="nombre_voluntario" required><br>
+
+            <label for="identificacion_voluntario">Identificación:</label>
+            <input type="text" id="identificacion_voluntario" name="identificacion_voluntario" required><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="18" required><br>
+
+            <label for="ocupacion">Ocupación:</label>
+            <input type="text" id="ocupacion" name="ocupacion" required><br>
+
+            <label for="disponibilidad">Disponibilidad:</label>
+            <select id="disponibilidad" name="disponibilidad" required>
+                <option value="fines_de_semana">Fines de Semana</option>
+                <option value="tiempo_completo">Tiempo Completo</option>
+            </select><br>
+
+            <button type="submit">Enviar Solicitud de Voluntariado</button>
+        </form>
+
+        <!-- Aquí se mostrará el detalle completo de las personas en el programa de voluntariado -->
+        <div id="detalle-voluntariado">
+            <!-- Aquí se insertará dinámicamente el detalle de las personas en el programa de voluntariado -->
+        </div>
+    </section>
+        
+        <h1>Ver lista de donaciones</h1>
+        <p>Para ver los datos de los usuarios cargados haga click en el siguiente boton</p>
+        <form action="SvDonaciones" method="GET">
+        <button type="submit">Mostrar donaciones</button>
+        </form>
+    </body>
+</html>
